@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Raleway:ital@0;1&display=swap');
+
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+
+  /*Orange Shades*/
+  --color-orange-65: #ff8d4c;
+  --color-orange-70: #ff9e66;
+  --color-orange-75: #ffae80;
+  --color-orange-80: #ffbe99;
+  --color-orange-90: #ffdecc;
+  --color-orange-95: #ffefe5;
+  --color-orange-97: #fff5f0;
+  --color-orange-99: #fffcfa;
+
+  /*Grey Shades*/
+
+  --color-grey-10: #191919;
+  --color-grey-15: #262626;
+  --color-grey-20: #333333;
+  --color-grey-30: #4c4c4d;
+  --color-grey-35: #59595a;
+  --color-grey-40: #656567;
+  --color-grey-60: #98989a;
+  --color-grey-70: #b3b3b3;
+
+  /*Fonts*/
+
+  --font-family-raleway: 'Raleway', sans-serif;
+  --font-family-outfit: 'Outfit', sans-serif;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 18px 50px;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*-----------------------------*/
+/* Utility Classes             */
+/*-----------------------------*/
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap, 1rem);
+}
