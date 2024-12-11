@@ -1,5 +1,9 @@
+.ourBenefits {
+  margin: 0 30px;
+}
+
 .ourBenefits__container {
-  margin-top: 200px;
+  margin-top: 150px;
   display: flex;
   flex-direction: column;
   gap: 19px;
@@ -19,6 +23,7 @@
   border-radius: 8px;
   border: 2px solid var(--color-black);
   width: max-content;
+  background-color: var(--color-white);
 }
 
 .ourBenefits__container > h1 {
@@ -59,6 +64,9 @@
   border: 2px solid var(--color-grey-15);
   background-color: var(--color-white);
   height: 100%;
+  -webkit-box-shadow: 4px 4px 2px 4px #1e1e1e;
+  -moz-box-shadow: 4px 4px 2px 4px #1e1e1e;
+  box-shadow: 4px 4px 2px 4px #1e1e1e;
 }
 
 .icon-container {

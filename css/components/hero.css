@@ -6,7 +6,11 @@
   margin: 80px 30px 0 30px;
 }
 
-.hero__container > p:first-child {
+.hero__container > div:first-child {
+  display: inline-block;
+}
+
+.hero__container > div > p:first-child {
   font-size: clamp(1rem, 0.975rem + 0.125vw, 1.125rem);
   font-family: 'Outfit';
   font-style: normal;
@@ -14,6 +18,12 @@
   line-height: 1.2;
   color: var(--color-grey-15);
   margin-bottom: 6px;
+  display: inline-block;
+}
+
+.hero__container > div > hr {
+  border-bottom: 2px solid var(--color-grey-15);
+  margin: 0;
 }
 
 .hero__container > p:not(:first-child) {
@@ -47,6 +57,9 @@
   justify-content: space-between;
   border: 2px solid var(--color-grey-15);
   border-radius: 10px;
+  -webkit-box-shadow: 6px 6px 1px 6px #ffbe99;
+  -moz-box-shadow: 6px 6px 1px 6px #ffbe99;
+  box-shadow: 6px 6px 1px 6px #ffbe99;
 }
 
 .achivement > p:first-child {
