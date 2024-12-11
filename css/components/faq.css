@@ -1,5 +1,9 @@
 .our-faq {
   margin: 0 30px;
+
+  @media (width < 1080px) {
+    margin: 0 0;
+  }
 }
 
 .our-faq-container {
@@ -10,6 +14,12 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 100px;
+
+  @media (width < 1080px) {
+    margin-top: 80px;
+    gap: 10px;
+    margin-bottom: 50px;
+  }
 }
 
 .our-faq-container > p:first-child {
@@ -33,6 +43,10 @@
   font-weight: 700;
   line-height: 1.2;
   color: var(--color-grey-10);
+
+  @media (width < 1080px) {
+    text-align: center;
+  }
 }
 
 .our-faq-container > p:last-child {
@@ -43,17 +57,31 @@
   line-height: 1.2;
   width: 992px;
   text-align: center;
+
+  @media (width < 1080px) {
+    width: 100%;
+  }
 }
 
 .faq-container {
   display: flex;
   gap: 40px;
+
+  @media (width < 1080px) {
+    display: grid;
+    gap: 20px;
+  }
 }
 
 .faq-sub-container {
   display: flex;
   flex-direction: column;
   gap: 24px;
+
+  @media (width < 1080px) {
+    display: grid;
+    gap: 20px;
+  }
 }
 
 .faq {
@@ -62,11 +90,25 @@
   padding: 34px 86px 34px 30px;
   position: relative;
   background-color: var(--color-white);
+
+  @media (width < 1080px) {
+    padding: 30px 24px 30px 24px;
+  }
 }
 
 .faq > div:first-child {
   display: grid;
   gap: 20px;
+}
+
+.faq > div:first-child > div {
+  @media (width < 1080px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+  }
 }
 
 .question {
@@ -98,6 +140,13 @@
   border: 2px solid var(--color-grey-15);
   display: grid;
   place-items: center;
+
+  @media (width < 1080px) {
+    position: relative;
+    top: 0px;
+    right: 0px;
+    flex-shrink: 0;
+  }
 }
 
 .hidden {

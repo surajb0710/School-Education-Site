@@ -35,6 +35,8 @@
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
   --font-weight-extrabold: 800;
+
+  --breakpoint: 1080px;
 }
 
 *,
@@ -45,8 +47,12 @@
 
 body {
   margin: 0;
-  padding: 18px 50px;
+  padding: 18px 50px 18px 50px;
   background-color: var(--color-orange-95);
+
+  @media (width < 1080px) {
+    padding: 40px 17px 20px 17px;
+  }
 }
 
 h1,

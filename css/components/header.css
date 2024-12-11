@@ -22,23 +22,64 @@
   background-color: var(--color-orange-90);
   border: 2px solid var(--color-grey-15);
   border-radius: 2px;
+
+  @media (width < 1080px) {
+    justify-content: center;
+  }
 }
 
 .abstract-design {
   object-fit: cover;
   clip-path: border-box;
+
+  @media (width < 1080px) {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.abstract-design.left {
+  @media (width < 1080px) {
+    position: absolute;
+    left: -9px;
+  }
+}
+
+.abstract-design.right {
+  @media (width < 1080px) {
+    position: absolute;
+    right: 0px;
+  }
 }
 
 .large-sphere {
   position: absolute;
   left: 343px;
   bottom: 22px;
+
+  @media (width < 1080px) {
+    width: 50px;
+    height: 50px;
+    left: auto;
+    top: 24px;
+    right: -19.37px;
+    z-index: 1;
+  }
 }
 
 .small-sphere {
   position: absolute;
   right: 378px;
   top: 31px;
+
+  @media (width < 1080px) {
+    width: 31px;
+    height: 32.5px;
+    left: 1px;
+    top: -11px;
+    right: auto;
+    z-index: 1;
+  }
 }
 
 .top-banner__text {
@@ -46,6 +87,24 @@
   align-items: center;
   justify-content: space-between;
   gap: 14px;
+  z-index: 10;
+  font-size: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--color-grey-15);
+
+  @media (width < 1080px) {
+    gap: 10px;
+  }
+}
+
+.top-banner__text > svg {
+  @media (width < 1080px) {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .navbar {
@@ -72,6 +131,10 @@
 
 .navbar__links {
   display: flex;
+
+  @media (width < 1080px) {
+    display: none;
+  }
 }
 
 .navbar__links a {
@@ -83,6 +146,10 @@
   font-style: normal;
   font-weight: 500;
   line-height: 1.2;
+
+  @media (width < 1080px) {
+    padding: 22px 10px;
+  }
 }
 
 .navbar__links a:last-child {
@@ -94,4 +161,16 @@
 
 .navbar__links a:first-child {
   border-left: 2px solid var(--color-grey-15);
+}
+
+.hamburger-container {
+  width: 88px;
+  height: 100%;
+  place-content: center;
+  border-left: 2px solid var(--color-grey-15);
+  display: none;
+
+  @media (width < 1080px) {
+    display: grid;
+  }
 }
