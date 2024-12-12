@@ -1,9 +1,11 @@
 @import url('../css/global/boilerplate.css');
 @import url('../css/global/fonts.css');
-@import url('../css/components/header.css');
-@import url('../css/components/footer.css');
-@import url('../css/components/ourBenefits.css');
-@import url('../css/components/hero.css');
-@import url('../css/components/testimonials.css');
-@import url('../css/components/faq.css');
-@import url('../css/components/pageNavigation.css');
+@import url('../css/components/landingPage/header.css');
+@import url('../css/components/landingPage/footer.css');
+@import url('../css/components/landingPage/ourBenefits.css');
+@import url('../css/components/landingPage/hero.css');
+@import url('../css/components/landingPage/testimonials.css');
+@import url('../css/components/landingPage/faq.css');
+@import url('../css/components/landingPage/pageNavigation.css');
+
+@import url('../css/components/aboutUsPage/overview.css');
