@@ -37,7 +37,7 @@
   margin-bottom: 20px;
 }
 
-.block > p {
+.block > p:first-child {
   margin: 0 0 10px 0;
   font-size: clamp(0.875rem, 1.025rem + -0.125vw, 1rem);
   font-family: 'Outfit';
@@ -55,7 +55,7 @@
   }
 }
 
-.block > h1 {
+.block > h1:first-child {
   font-size: clamp(1.75rem, 1.625rem + 0.625vw, 2.375rem);
   font-family: 'Outfit';
   font-style: normal;
@@ -68,7 +68,7 @@
   }
 }
 
-.overview > p {
+.overview > p:last-child {
   font-size: clamp(0.875rem, 1.025rem + -0.125vw, 1rem);
   font-family: 'Outfit';
   font-style: normal;
