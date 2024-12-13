@@ -71,9 +71,9 @@
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 20px max-content 1fr;
+  grid-template-rows: repeat(11, minmax(80px, auto));
   border: 2px solid var(--color-grey-15);
   border-radius: 12px;
-  grid-template-rows: repeat(11, minmax(80px, auto));
   -webkit-box-shadow: 4px 4px 1px 4px #1e1e1e;
   -moz-box-shadow: 4px 4px 1px 4px #1e1e1e;
   box-shadow: 4px 4px 1px 4px #1e1e1e;
