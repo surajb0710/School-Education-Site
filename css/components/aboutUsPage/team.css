@@ -87,6 +87,10 @@
   box-shadow: 4px 4px 1px 4px #1e1e1e;
   background-color: var(--color-white);
   padding: 40px;
+
+  @media (width < 1080px) {
+    grid-template-columns: 60px auto 48px;
+  }
 }
 
 .educator-profile > .educator__display-picture {
