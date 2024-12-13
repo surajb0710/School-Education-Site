@@ -13,3 +13,8 @@
 @import url('../css/components/aboutUsPage/awards-recognitions.css');
 @import url('../css/components/aboutUsPage/history.css');
 @import url('../css/components/aboutUsPage/team.css');
+
+@import url('../css/components/academics/academics-overview.css');
+@import url('../css/components/academics/gallery.css');
+@import url('../css/components/academics/special-features.css');
+@import url('../css/components/academics/student-learn-features.css');
