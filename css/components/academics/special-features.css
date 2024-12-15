@@ -70,6 +70,10 @@
   grid-auto-rows: max-content;
   gap: 50px;
   margin-bottom: 40px;
+
+  @media (width < 1080px) {
+    gap: calc(40px + 28px);
+  }
 }
 
 .feature {
@@ -81,11 +85,10 @@
   -moz-box-shadow: 4px 4px 1px 4px #1e1e1e;
   box-shadow: 4px 4px 1px 4px #1e1e1e;
   background-color: var(--color-white);
-}
 
-.feature:not(.first) {
   @media (width < 1080px) {
-    display: none;
+    grid-column-start: 1;
+    grid-column-end: 4;
   }
 }
 
