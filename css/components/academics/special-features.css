@@ -76,7 +76,7 @@
   }
 }
 
-.feature {
+.special-features-block > .feature {
   position: relative;
   padding: 60px 40px 40px 40px;
   border: 2px solid var(--color-grey-15);
@@ -92,7 +92,7 @@
   }
 }
 
-.feature > img {
+.special-features-block > .feature > img {
   width: 56px;
   aspect-ratio: 1/1;
   position: absolute;
@@ -100,7 +100,7 @@
   top: -28px;
 }
 
-.feature > h2 {
+.special-features-block > .feature > h2 {
   font-size: clamp(1.375rem, 1.35rem + 0.125vw, 1.5rem);
   font-family: 'Outfit';
   font-style: normal;
@@ -109,7 +109,7 @@
   color: var(--color-grey-10);
 }
 
-.feature > p {
+.special-features-block > .feature > p {
   font-size: clamp(1rem, 1rem + 0vw, 1rem);
   font-family: 'Outfit';
   font-style: normal;
