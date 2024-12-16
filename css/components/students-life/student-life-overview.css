@@ -1,4 +1,4 @@
-.overview {
+.student-life-overview {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -21,7 +21,7 @@
   }
 }
 
-.overview > img {
+.student-life-overview > img {
   position: absolute;
   left: 0;
   top: 0;
@@ -32,12 +32,12 @@
   }
 }
 
-.block {
+.student-life-overview > .block {
   flex: 1 1 0px;
   margin-bottom: 20px;
 }
 
-.block > p:first-child {
+.student-life-overview > .block > p:first-child {
   margin: 0 0 10px 0;
   font-size: clamp(0.875rem, 1.025rem + -0.125vw, 1rem);
   font-family: 'Outfit';
@@ -55,7 +55,7 @@
   }
 }
 
-.block > h1:first-child {
+.student-life-overview > .block > h1:last-child {
   font-size: clamp(1.75rem, 1.625rem + 0.625vw, 2.375rem);
   font-family: 'Outfit';
   font-style: normal;
@@ -68,7 +68,7 @@
   }
 }
 
-.overview > p:last-child {
+.student-life-overview > p:last-child {
   font-size: clamp(0.875rem, 1.025rem + -0.125vw, 1rem);
   font-family: 'Outfit';
   font-style: normal;
