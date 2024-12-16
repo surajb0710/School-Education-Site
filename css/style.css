@@ -23,3 +23,8 @@
 @import url('../css/components/students-life/student-support.css');
 @import url('../css/components/students-life/extracurricular-activities.css');
 @import url('../css/components/students-life/events-celebrations.css');
+
+@import url('../css/components/admissions/admission-process.css');
+@import url('../css/components/admissions/admissions-overview.css');
+@import url('../css/components/admissions/special-features.css');
+@import url('../css/components/admissions/student-learn-features.css');
