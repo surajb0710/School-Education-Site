@@ -7,6 +7,7 @@ import StudentLife from './pages/StudentLife';
 import Header from './components/Header';
 
 import './css/style.css';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/studentlife" element={<StudentLife />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   );
