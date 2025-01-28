@@ -1,0 +1,33 @@
+@import url('../css/global/boilerplate.css');
+@import url('../css/global/fonts.css');
+@import url('../css/components/landingPage/header.css');
+@import url('../css/components/landingPage/footer.css');
+@import url('../css/components/landingPage/ourBenefits.css');
+@import url('../css/components/landingPage/hero.css');
+@import url('../css/components/landingPage/testimonials.css');
+@import url('../css/components/landingPage/faq.css');
+@import url('../css/components/landingPage/pageNavigation.css');
+
+@import url('../css/components/aboutUsPage/overview.css');
+@import url('../css/components/aboutUsPage/mission-vision.css');
+@import url('../css/components/aboutUsPage/awards-recognitions.css');
+@import url('../css/components/aboutUsPage/history.css');
+@import url('../css/components/aboutUsPage/team.css');
+
+@import url('../css/components/academics/academics-overview.css');
+@import url('../css/components/academics/gallery.css');
+@import url('../css/components/academics/special-features.css');
+@import url('../css/components/academics/student-learn-features.css');
+
+@import url('../css/components/students-life/student-life-overview.css');
+@import url('../css/components/students-life/student-support.css');
+@import url('../css/components/students-life/extracurricular-activities.css');
+@import url('../css/components/students-life/events-celebrations.css');
+
+@import url('../css/components/admissions/admission-process.css');
+@import url('../css/components/admissions/admissions-overview.css');
+/* @import url('../css/components/admissions/special-features.css'); */
+@import url('../css/components/admissions/fee-structure.css');
+
+@import url('../css/components/contactUs/contact-us.css');
+@import url('../css/components/contactUs/contact-us-overview.css');
