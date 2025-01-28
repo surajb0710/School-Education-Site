@@ -127,8 +127,9 @@
   }
 }
 
-.pages > button {
+.page-navigation-btn {
   height: 63px;
+  width: 100%;
   display: flex;
   gap: 10px;
   justify-content: center;
@@ -145,6 +146,7 @@
   -webkit-box-shadow: 4px 4px 2px 4px #1e1e1e;
   -moz-box-shadow: 4px 4px 2px 4px #1e1e1e;
   box-shadow: 4px 4px 2px 4px #1e1e1e;
+  cursor: pointer;
 
   @media (width < 1080px) {
     height: 56px;

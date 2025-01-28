@@ -105,10 +105,12 @@
 }
 
 .testimonial-block {
-  padding: 0 20px;
+  padding: 10px 20px;
+  height: 374px;
 }
 
 .testimonials {
+  height: 100%;
   padding: 50px;
   border-radius: 12px;
   border: 2px solid var(--color-grey-15);
@@ -120,9 +122,6 @@
   -moz-box-shadow: 4px 4px 2px 4px #1e1e1e;
   box-shadow: 4px 4px 2px 4px #1e1e1e;
   background-color: var(--color-white);
-  /* width: 340px !important; */
-  height: 374px;
-  /* margin-left: 40px; */
 
   @media (width < 1080px) {
     grid-column-start: 1;
