@@ -55,6 +55,8 @@ import flag from './svgs/flag.svg';
 import wheel from './svgs/wheel.svg';
 import group from './svgs/group.svg';
 import star_filled from './svgs/star-filled.svg';
+import plus from './svgs/plus.svg';
+import minus from './svgs/minus.svg';
 
 import arts_crafts from './images/arts-crafts.png';
 import classroom_01 from './images/classroom-01.png';
@@ -148,6 +150,8 @@ export const svgs = {
   wheel,
   group,
   star_filled,
+  plus,
+  minus,
 };
 
 export const images = {
