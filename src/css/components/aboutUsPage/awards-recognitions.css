@@ -74,8 +74,15 @@
   }
 }
 
-.awards {
+.award-container {
   position: relative;
+  padding: 28px 15px 40px;
+  height: 100%;
+}
+
+.awards {
+  flex-grow: 1;
+  height: 100%;
   padding: 60px 40px 40px 40px;
   border: 2px solid var(--color-grey-15);
   border-radius: 10px;
@@ -83,6 +90,7 @@
   -moz-box-shadow: 4px 4px 1px 4px #1e1e1e;
   box-shadow: 4px 4px 1px 4px #1e1e1e;
   background-color: var(--color-white);
+  flex: 1;
 }
 
 .awards:not(.first) {
@@ -91,12 +99,12 @@
   }
 }
 
-.awards > img {
+.award-container > img {
   width: 56px;
   aspect-ratio: 1/1;
   position: absolute;
-  left: 24px;
-  top: -28px;
+  left: 39px;
+  top: 0px;
 }
 
 .awards > h2 {
@@ -106,6 +114,7 @@
   font-weight: 700;
   line-height: 1.3;
   color: var(--color-grey-10);
+  margin-bottom: 16px;
 }
 
 .awards > p {
@@ -135,8 +144,8 @@
   color: var(--color-grey-10);
 }
 
-.arrow-lefts,
-.arrow-rights {
+.arrow-block .arrow-left,
+.arrow-block .arrow-right {
   width: 48px;
   height: 48px;
   border-radius: 8px;
@@ -148,7 +157,7 @@
   background-color: var(--color-white);
 }
 
-.arrow-lefta {
+.arrow-block .arrow-left {
   margin-right: 16px;
   @media (width < 1080px) {
     grid-column-start: 2;
@@ -156,7 +165,7 @@
   }
 }
 
-.arrow-righta {
+.arrow-block .arrow-right {
   @media (width < 1080px) {
     grid-column-start: 3;
     grid-row-start: 2;
@@ -285,4 +294,73 @@
   font-weight: 600;
   line-height: 1.2;
   color: var(--color-grey-30);
+}
+
+.awards__arrow-left,
+.awards__arrow-right {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  border: 2px solid var(--color-grey-20);
+  box-sizing: border-box;
+  display: grid !important;
+  place-content: center;
+  background-color: var(--color-white);
+  /* z-index: 10; */
+}
+
+.awards__arrow-left img {
+  rotate: 180deg;
+}
+
+.awards__arrow-left {
+  position: absolute;
+  bottom: 0;
+  @media (width < 1080px) {
+    grid-column-start: 2;
+    grid-row-start: 2;
+  }
+}
+
+.awards__arrow-right {
+  @media (width < 1080px) {
+    grid-column-start: 3;
+    grid-row-start: 2;
+  }
+}
+
+/* Style to make arrows at the bottom-right */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  bottom: 10px; /* Adjust this for spacing */
+  z-index: 10;
+}
+
+/* Shift both arrows to the bottom-right */
+.slick-prev {
+  right: 50px; /* Adjust the spacing between the arrows */
+}
+
+.slick-next {
+  right: 10px;
+}
+
+.slick-track {
+  display: flex !important;
+}
+
+.slick-slide {
+  height: inherit !important;
+  align-items: stretch !important;
+}
+
+.slick-slide > div {
+  height: 100%;
+}
+
+.slick-slider {
+  @media (width < 1080px) {
+    padding: 0;
+  }
 }
