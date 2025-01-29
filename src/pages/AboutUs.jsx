@@ -3,8 +3,6 @@ import AwardsRecognitions from '../components/AboutUs/AwardsRecognitions';
 import History from '../components/AboutUs/History';
 import MissionVision from '../components/AboutUs/MissionVision';
 import Team from '../components/AboutUs/Team';
-import Testimonials from '../components/AboutUs/Testimonials';
-import Test from '../components/AboutUs/Test';
 
 const AboutUs = () => {
   return (
@@ -12,10 +10,8 @@ const AboutUs = () => {
       <Overview />
       <MissionVision />
       <AwardsRecognitions />
-      {/* <Testimonials /> */}
-      {/* <History />
-      <Team /> */}
-      {/* <Test /> */}
+      <History />
+      <Team />
     </main>
   );
 };
