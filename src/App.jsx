@@ -8,6 +8,7 @@ import Header from './components/Header';
 
 import './css/style.css';
 import Footer from './components/Footer';
+import Admission from './pages/Admission';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/academics" element={<Academics />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/studentlife" element={<StudentLife />} />
+          <Route path="/admissions" element={<Admission />} />
         </Routes>
         <Footer />
       </BrowserRouter>
