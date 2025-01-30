@@ -2,7 +2,7 @@ import { images } from '../../assets/assets.js';
 
 const StudentLearnFeatures = () => {
   return (
-    <section className="student-learn-features">
+    <section className="student-learn-features" id="student-learn-features">
       <div>
         <p>Our Features</p>
         <h1>What Students Learn</h1>

@@ -76,9 +76,9 @@ const FAQ = () => {
                       <img
                         src={!expandedItems[index] ? svgs.plus : svgs.minus}
                         alt=""
-                        className="size-6 collapse"
-                        width="20px"
-                        height="20px"
+                        className="size-6"
+                        width="24px"
+                        height="24px"
                       />
                     </div>
                   </div>
@@ -106,9 +106,9 @@ const FAQ = () => {
                       <img
                         src={!expandedItems[index] ? svgs.plus : svgs.minus}
                         alt=""
-                        className="size-6 collapse"
-                        width="20px"
-                        height="20px"
+                        className="size-6"
+                        width="24px"
+                        height="24px"
                       />
                     </div>
                   </div>

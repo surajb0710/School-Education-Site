@@ -1,3 +1,10 @@
+#top-anchor {
+  padding-bottom: 18px;
+  @media (width < 1080px) {
+    padding-bottom: 40px;
+  }
+}
+
 .header {
   display: flex;
   flex-direction: column;

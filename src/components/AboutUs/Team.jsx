@@ -2,7 +2,7 @@ import { svgs } from '../../assets/assets.js';
 
 const Team = () => {
   return (
-    <section className="team">
+    <section className="team" id="team">
       <div>
         <p>Our Teachers With Experties</p>
         <h1>Our Team Members</h1>

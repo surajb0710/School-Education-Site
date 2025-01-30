@@ -1,6 +1,5 @@
 import { svgs } from '../assets/assets.js';
-import { Link } from 'react-router-dom';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { HashLink } from 'react-router-hash-link';
 
 const Footer = () => {
   return (
@@ -23,37 +22,19 @@ const Footer = () => {
           <div className="contact-details">
             <div className="contact-details__email">
               <div>
-                <img
-                  src={svgs.email}
-                  alt=""
-                  className="size-6"
-                  width="20px"
-                  height="20px"
-                />
+                <img src={svgs.email} alt="" />
               </div>
               <p>hello@littlelearners.com</p>
             </div>
             <div className="contact-details__phone-number">
               <div>
-                <img
-                  src={svgs.phone}
-                  alt=""
-                  className="size-6"
-                  width="20px"
-                  height="20px"
-                />
+                <img src={svgs.phone} alt="" />
               </div>
               <p>+91 91813 23 2309</p>
             </div>
             <div className="contact-details__address">
               <div>
-                <img
-                  src={svgs.location_pin}
-                  alt=""
-                  className="size-6"
-                  width="20px"
-                  height="20px"
-                />
+                <img src={svgs.location_pin} alt="" />
               </div>
 
               <p>Somewhere in the World</p>
@@ -62,63 +43,88 @@ const Footer = () => {
         </div>
         <div className="sitemap">
           <div className="sitemap__home">
-            <Link to="/">Home</Link>
-            <AnchorLink href="#features">Features</AnchorLink>
-            <AnchorLink href="#testimonials">Our Testimonials</AnchorLink>
-            <AnchorLink href="#faq">FAQ</AnchorLink>
+            <HashLink smooth to="/#top-anchor">
+              Home
+            </HashLink>
+            <HashLink smooth to="/#features">
+              Features
+            </HashLink>
+            <HashLink smooth to="/#testimonials">
+              Our Testimonials
+            </HashLink>
+            <HashLink smooth to="/#faq">
+              FAQ
+            </HashLink>
           </div>
           <div className="sitemap__about-us">
-            <Link to="/about-us">About Us</Link>
-            <a href="">Our Mission</a>
-            <a href="">Our Vision</a>
-            <a href="">Awards and Recognitions</a>
-            <a href="">History</a>
-            <a href="">Teachers</a>
+            <HashLink smooth to="/about-us#top-anchor">
+              About Us
+            </HashLink>
+            <HashLink smooth to="/about-us#missionVision">
+              Our Mission
+            </HashLink>
+            <HashLink smooth to="/about-us#missionVision">
+              Our Vision
+            </HashLink>
+            <HashLink smooth to="/about-us#awards-recognitions">
+              Awards and Recognitions
+            </HashLink>
+            <HashLink smooth to="/about-us#history">
+              History
+            </HashLink>
+            <HashLink smooth to="/about-us#team">
+              Teachers
+            </HashLink>
           </div>
           <div className="sitemap__academics">
-            <Link to="/academics">Academics</Link>
-            <a href="">Special Features</a>
-            <a href="">Gallery</a>
+            <HashLink smooth to="/academics#top-anchor">
+              Academics
+            </HashLink>
+            <HashLink smooth to="/academics#special-features">
+              Special Features
+            </HashLink>
+            <HashLink smooth to="/academics#gallery">
+              Gallery
+            </HashLink>
           </div>
           <div className="sitemap__contact-us">
-            <Link to="/contact-us">Contact</Link>
-            <a href="">Information</a>
-            <a href="">Map & Direction</a>
+            <HashLink smooth to="/contact-us#top-anchor">
+              Contact
+            </HashLink>
+            <HashLink smooth to="/contact-us#contact-us">
+              Information
+            </HashLink>
           </div>
         </div>
       </div>
       <div className="links-social-handles">
         <div className="links">
-          <a href="">Terms of Service</a>
+          <HashLink smooth to="/termsOfService#top-anchor">
+            Terms of Service
+          </HashLink>
           <p>|</p>
-          <a href="">Privacy Policy</a>
+          <HashLink smooth to="/privacypolicy#top-anchor">
+            Privacy Policy
+          </HashLink>
           <p>|</p>
-          <a href="">Cookie Policy</a>
+          <HashLink smooth to="/cookiespolicy#top-anchor">
+            Cookie Policy
+          </HashLink>
         </div>
         <div className="social-handles">
           <div>
-            <img
-              src="./assets/facebook.svg"
-              alt=""
-              width="20px"
-              height="20px"
-            />
+            <img src={svgs.facebook} alt="" width="20px" height="20px" />
           </div>
           <div>
-            <img src="./assets/twitter.svg" alt="" width="20px" height="20px" />
+            <img src={svgs.twitter} alt="" width="20px" height="20px" />
           </div>
           <div>
-            <img
-              src="./assets/linkedin.svg"
-              alt=""
-              width="20px"
-              height="20px"
-            />
+            <img src={svgs.linkedin} alt="" width="20px" height="20px" />
           </div>
         </div>
       </div>
       <p className="copyright-text">
-        Copyright © [2023] Little Learners Academy. All rights reserved.
+        Copyright © [2025] Little Learners Academy. All rights reserved.
       </p>
     </footer>
   );

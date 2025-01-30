@@ -108,6 +108,7 @@
 
   @media (width < 1080px) {
     grid-template-columns: 1fr;
+    padding: 100px 30px 80px;
   }
 }
 
@@ -120,8 +121,48 @@
   color: #4c4c4c;
 }
 
-.contact-us-form > div > input,
-.contact-us-form > div > select {
+.programofInterest_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid var(--color-grey-15);
+  border-radius: 6px;
+  padding: 24px;
+  margin-top: 14px;
+  position: relative;
+}
+
+.programofInterest {
+  width: 100%;
+  border: none;
+  -webkit-appearance: none;
+  appearance: none;
+  -moz-appearance: none;
+  font-size: clamp(1rem, 1rem + 0vw, 1rem);
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--color-grey-35);
+  z-index: 1;
+  background-color: #0000;
+
+  @media (width < 1080px) {
+    padding: 20px;
+  }
+}
+
+.programofInterest:focus-visible {
+  border: none;
+  outline: none;
+}
+
+.programofInterest_container > img {
+  position: absolute;
+  right: 24px;
+}
+
+.contact-us-form > div > input {
   padding: 24px;
   width: 100%;
   margin-top: 14px;
@@ -136,11 +177,10 @@
   font-weight: 500;
   line-height: 1.5;
   color: var(--color-grey-35);
-}
 
-.contact-us-form > div > select {
-  background: url('../../../assets/dropdown-arrow.svg') no-repeat right 24px
-    center;
+  @media (width < 1080px) {
+    padding: 20px;
+  }
 }
 
 .contact-us-form > div:nth-of-type(7) > textarea {
@@ -261,11 +301,13 @@
   line-height: 1.5;
   color: var(--color-grey-35);
   background-color: var(--color-orange-75);
+  cursor: pointer;
 
   @media (width < 1080px) {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 8;
+    padding: 16px 34px;
   }
 }
 
@@ -280,4 +322,9 @@ input::-webkit-inner-spin-button {
 .contact-us-form > div:nth-of-type(3) > input[type='number'] {
   -moz-appearance: textfield;
   appearance: textfield;
+}
+
+.errorMessage {
+  color: red;
+  font-weight: 500;
 }

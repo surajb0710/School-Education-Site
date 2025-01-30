@@ -31,3 +31,5 @@
 
 @import url('../css/components/contactUs/contact-us.css');
 @import url('../css/components/contactUs/contact-us-overview.css');
+
+@import 'tailwindcss';

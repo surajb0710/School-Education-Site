@@ -2,7 +2,7 @@ import { svgs } from '../../assets/assets.js';
 
 const SpecialFeatures = () => {
   return (
-    <section className="special-features">
+    <section className="special-features" id="special-features">
       <div>
         <p>Our Features</p>
         <h1>Our Special Features</h1>

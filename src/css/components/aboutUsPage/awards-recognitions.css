@@ -260,24 +260,6 @@
   }
 }
 
-.icon-container {
-  width: 74px;
-  height: 74px;
-  border-radius: 12px;
-  border: 2px solid var(--color-grey-15);
-  position: absolute;
-  left: 30px;
-  top: -35px;
-  display: grid;
-  place-content: center;
-  background-color: var(--color-orange-90);
-
-  @media (width < 1080px) {
-    width: 56px;
-    height: 56px;
-  }
-}
-
 .benefits > div > h2 {
   font-size: clamp(1.375rem, 1.3rem + 0.375vw, 1.75rem);
   font-family: 'Outfit';

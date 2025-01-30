@@ -57,6 +57,7 @@ import group from './svgs/group.svg';
 import star_filled from './svgs/star-filled.svg';
 import plus from './svgs/plus.svg';
 import minus from './svgs/minus.svg';
+import carrot_down from './svgs/carrot_down.svg';
 
 import arts_crafts from './images/arts-crafts.png';
 import classroom_01 from './images/classroom-01.png';
@@ -152,6 +153,7 @@ export const svgs = {
   star_filled,
   plus,
   minus,
+  carrot_down,
 };
 
 export const images = {

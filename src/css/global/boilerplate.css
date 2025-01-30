@@ -47,11 +47,11 @@
 
 body {
   margin: 0;
-  padding: 18px 50px 18px 50px;
+  padding: 0px 50px 18px 50px;
   background-color: var(--color-orange-95);
 
   @media (width < 1080px) {
-    padding: 40px 17px 20px 17px;
+    padding: 0px 17px 20px 17px;
   }
 }
 

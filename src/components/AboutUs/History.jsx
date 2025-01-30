@@ -1,7 +1,7 @@
 import { svgs } from '../../assets/assets.js';
 const History = () => {
   return (
-    <section className="history">
+    <section className="history" id="history">
       <div>
         <p>Our Progressive Journey</p>
         <h1>Our History</h1>

@@ -102,7 +102,7 @@ const AwardsRecognitions = () => {
   };
 
   return (
-    <section className="awards-recognitions">
+    <section className="awards-recognitions" id="awards-recognitions">
       <div>
         <p>Our Achievements</p>
         <h1>Our Awards and Recognitions</h1>

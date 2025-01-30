@@ -94,8 +94,8 @@
 }
 
 .icon-container {
-  width: 74px;
-  height: 74px;
+  width: 56px;
+  height: 56px;
   border-radius: 12px;
   border: 2px solid var(--color-grey-15);
   position: absolute;

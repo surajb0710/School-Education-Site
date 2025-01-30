@@ -5,7 +5,7 @@ const Gallery = () => {
   const [filter, setFilter] = useState('All');
 
   return (
-    <section className="gallery">
+    <section className="gallery" id="gallery">
       <div>
         <p>Our Gallery</p>
         <h1>Our Rooms Gallery</h1>
