@@ -35,7 +35,7 @@ const TermsOfService = () => {
         <h2 className="text-xl font-semibold">4. Intellectual Property</h2>
         <p>
           All content, trademarks, and logos on this site are the property of
-          [Your Website Name] unless otherwise stated.
+          https://school-education-site.vercel.app/ unless otherwise stated.
         </p>
       </section>
 
