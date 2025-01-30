@@ -22,7 +22,9 @@ const Footer = () => {
           <div className="contact-details">
             <div className="contact-details__email">
               <div>
-                <img src={svgs.email} alt="" />
+                <a href="mailto:hello@littlelearners.com">
+                  <img src={svgs.email} alt="" />
+                </a>
               </div>
               <p>hello@littlelearners.com</p>
             </div>
@@ -30,7 +32,7 @@ const Footer = () => {
               <div>
                 <img src={svgs.phone} alt="" />
               </div>
-              <p>+91 91813 23 2309</p>
+              <p>+1 123456789</p>
             </div>
             <div className="contact-details__address">
               <div>

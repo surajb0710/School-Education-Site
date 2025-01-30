@@ -52,10 +52,10 @@ const CookiesPolicy = () => {
         <p>
           For any questions, contact us at{' '}
           <a
-            href="mailto:contact@schoolwebsite.com"
+            href="mailto:contact@littlelearners.com"
             className="text-blue-600 hover:underline"
           >
-            contact@schoolwebsite.com
+            contact@littlelearners.com
           </a>
           .
         </p>

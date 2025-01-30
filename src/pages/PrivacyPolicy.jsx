@@ -40,10 +40,10 @@ const PrivacyPolicy = () => {
           You have the right to access, modify, or delete your personal data.
           Contact us at{' '}
           <a
-            href="mailto:contact@schoolwebsite.com"
+            href="mailto:contact@littlelearners.com"
             className="text-blue-600 hover:underline"
           >
-            contact@schoolwebsite.com
+            contact@littlelearners.com
           </a>{' '}
           to make a request.
         </p>

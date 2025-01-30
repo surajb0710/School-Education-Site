@@ -1,60 +1,8 @@
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import PropTypes from 'prop-types';
 import { svgs } from '../../assets/assets.js';
-
-function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={`${className} arrow-right`}
-      style={{ ...style }}
-      onClick={onClick}
-    >
-      <img
-        src={svgs.right_arrow}
-        alt=""
-        className="size-6"
-        width="24px"
-        height="24px"
-      />
-    </div>
-  );
-}
-
-SampleNextArrow.propTypes = {
-  className: PropTypes.string.isRequired,
-  style: PropTypes.object.isRequired,
-  onClick: PropTypes.func.isRequired,
-};
-
-function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={`${className} arrow-left`}
-      style={{
-        ...style,
-      }}
-      onClick={onClick}
-    >
-      <img
-        src={svgs.right_arrow}
-        alt=""
-        className="size-6"
-        width="24px"
-        height="24px"
-      />
-    </div>
-  );
-}
-
-SamplePrevArrow.propTypes = {
-  className: PropTypes.string.isRequired,
-  style: PropTypes.object.isRequired,
-  onClick: PropTypes.func.isRequired,
-};
+import { useRef } from 'react';
 
 const Testimonials = () => {
   const testimonialList = [
@@ -108,8 +56,31 @@ const Testimonials = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1080,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
+
+  const sliderRef = useRef(null); // Reference to the slider
+
+  const goToNext = () => {
+    sliderRef.current.slickNext(); // Navigate to the next slide
+  };
+
+  const goToPrev = () => {
+    sliderRef.current.slickPrev(); // Navigate to the previous slide
   };
 
   return (
@@ -124,8 +95,17 @@ const Testimonials = () => {
         </p>
       </div>
       <div className="testimonials-container">
+        <div className="arrow-left" onClick={goToPrev}>
+          <img
+            src={svgs.right_arrow}
+            alt=""
+            className="size-6"
+            width="24px"
+            height="24px"
+          />
+        </div>
         <div className="slider-container story-carousal-slider">
-          <Slider {...settings}>
+          <Slider ref={sliderRef} {...settings}>
             {testimonialList.map((testimonial, index) => (
               <div key={index} className="testimonial-block">
                 <div className="testimonials first">
@@ -180,6 +160,35 @@ const Testimonials = () => {
               </div>
             ))}
           </Slider>
+        </div>
+        <div className="arrow-right" onClick={goToNext}>
+          <img
+            src={svgs.right_arrow}
+            alt=""
+            className="size-6"
+            width="24px"
+            height="24px"
+          />
+        </div>
+        <div className="arrow-block">
+          <div className="arrow-left" onClick={goToPrev}>
+            <img
+              src={svgs.right_arrow}
+              alt=""
+              className="size-6"
+              width="24px"
+              height="24px"
+            />
+          </div>
+          <div className="arrow-right" onClick={goToNext}>
+            <img
+              src={svgs.right_arrow}
+              alt=""
+              className="size-6"
+              width="24px"
+              height="24px"
+            />
+          </div>
         </div>
       </div>
     </section>

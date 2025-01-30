@@ -23,7 +23,9 @@ const Team = () => {
             alt=""
           />
           <h2 className="educator__name">Ms. Sarah Anderson</h2>
-          <img className="email-icon" src="./assets/email.svg" alt="" />
+          <a href="mailto:sarah@littlelearners.com">
+            <img src={svgs.email} alt="" />
+          </a>
           <div className="educator-qualification">
             <h3>
               {`Qualification:Bachelor's Degree in Early Childhood Education`}
@@ -43,7 +45,9 @@ const Team = () => {
             alt=""
           />
           <h2 className="educator__name">Mr. David Roberts</h2>
-          <img src="./assets/email.svg" alt="" />
+          <a href="mailto:david@littlelearners.com">
+            <img src={svgs.email} alt="" />
+          </a>
           <div className="educator-qualification">
             <h3>{`Qualification: Master's Degree in Elementary Education`}</h3>
             <p>
@@ -61,7 +65,9 @@ const Team = () => {
             alt=""
           />
           <h2 className="educator__name">Ms. Emily Hernandez</h2>
-          <img src="./assets/email.svg" alt="" />
+          <a href="mailto:emily@littlelearners.com">
+            <img src={svgs.email} alt="" />
+          </a>
           <div className="educator-qualification">
             <h3>Qualification: Diploma in Child Psychology</h3>
             <p>
@@ -79,7 +85,9 @@ const Team = () => {
             alt=""
           />
           <h2 className="educator__name">Mr. Michael Turner</h2>
-          <img src="./assets/email.svg" alt="" />
+          <a href="mailto:michael@littlelearners.com">
+            <img src={svgs.email} alt="" />
+          </a>
           <div className="educator-qualification">
             <h3>{`Qualification: Bachelor's Degree in Physical Education`}</h3>
             <p>
@@ -96,7 +104,9 @@ const Team = () => {
             alt=""
           />
           <h2 className="educator__name">Ms. Jessica Lee</h2>
-          <img src="./assets/email.svg" alt="" />
+          <a href="mailto:jessica@littlelearners.com">
+            <img src={svgs.email} alt="" />
+          </a>
           <div className="educator-qualification">
             <h3>{`Qualification: Master's Degree in Special Education`}</h3>
             <p>
@@ -114,7 +124,9 @@ const Team = () => {
             alt=""
           />
           <h2 className="educator__name">Mr. William Parker</h2>
-          <img src="./assets/email.svg" alt="" />
+          <a href="mailto:william@littlelearners.com">
+            <img src={svgs.email} alt="" />
+          </a>
           <div className="educator-qualification">
             <h3>{`Qualification: Bachelor's Degree in Fine Arts`}</h3>
             <p>
