@@ -49,13 +49,15 @@ const Header = () => {
         </div>
         <nav className="navbar" id="navbar">
           <div className="logo-container">
-            <img
-              src={svgs.logo_laptop}
-              alt=""
-              width="155.29px"
-              height="34px"
-              className="logo"
-            />
+            <Link to="/">
+              <img
+                src={svgs.logo_laptop}
+                alt=""
+                width="155.29px"
+                height="34px"
+                className="logo"
+              />
+            </Link>
           </div>
 
           <div className="navbar__links">
