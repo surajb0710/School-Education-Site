@@ -136,6 +136,7 @@
   display: grid;
   place-items: center;
   flex-shrink: 0;
+  cursor: pointer;
 
   @media (width < 1080px) {
     position: relative;

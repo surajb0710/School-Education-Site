@@ -93,6 +93,7 @@
   top: 50%;
   right: 0;
   transform: translateY(-50%);
+
   @media (width < 1080px) {
     display: none !important;
   }
@@ -117,6 +118,7 @@
   display: grid !important;
   place-content: center;
   background-color: var(--color-white);
+  cursor: pointer;
 }
 
 .arrow-left img {

@@ -92,7 +92,18 @@
   }
 }
 
-.student-learn-features-block > .feature > img {
+.student-learn-features-block > .feature > .image-container {
+  width: 100%;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  padding: 0 40px;
+  max-height: 220px;
+  display: flex;
+  justify-content: center;
+}
+
+/* .student-learn-features-block > .feature > img {
   width: 320px;
   height: 220px;
   margin-left: auto;
@@ -104,7 +115,7 @@
     left: 0;
     right: 0;
   }
-}
+} */
 
 .student-learn-features-block > .feature > div:nth-of-type(1) {
   margin-left: auto;
