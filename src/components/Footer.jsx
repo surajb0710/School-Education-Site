@@ -2,6 +2,35 @@ import { svgs } from '../assets/assets.js';
 import { HashLink } from 'react-router-hash-link';
 
 const Footer = () => {
+  const fetchPageViews = async () => {
+    // const today = new Date();
+    // const startOfDay = new Date(today.setHours(0, 0, 0, 0)).getTime();
+    // const endOfDay = new Date(today.setHours(23, 59, 59, 999)).getTime();
+
+    try {
+      const response = await fetch(`https://api.umami.is/v1/websites`, {
+        method: 'GET',
+        headers: {
+          'x-umami-api-key': `${import.meta.env.VITE_API_KEY}`,
+          'Content-Type': 'application/json',
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+
+      const data = await response.json();
+      console.log('Total Page Views Today:', data);
+      console.log('Total Page Views Today-----:', data.count);
+    } catch (error) {
+      console.error('Error fetching page views:', error);
+    }
+  };
+
+  // Call the function
+  fetchPageViews();
+
   return (
     <footer className="footer">
       <div>
