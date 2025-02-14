@@ -21,7 +21,6 @@ const Footer = () => {
       }
 
       const data = await response.json();
-      console.log('Total Page Views Today:', data);
       console.log('Total Page Views Today-----:', data.count);
     } catch (error) {
       console.error('Error fetching page views:', error);
